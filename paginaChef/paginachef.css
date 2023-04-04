@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(72, 164, 207);
+}
+
+#divChef{
+    display: flex;
+    height: 400px;
+    background-color: rgb(224, 97, 97);
+}
+
+.imgdescricao{
+    display: flex;
+}
+
+.descricao{
+    padding-left: 10px;
+    flex: 50%;
+
+}
+
+#fotoChef{
+ flex: 40%;
+ text-align: center;
+}
+
+#fotoChef img{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 350px;
+}
+
+#descricaoChef{
+flex: 60%;
+}
+.prato{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 200px;
+    right: auto;
+}
+#pratospedidos{
+    display: flex;
+}
+
+.listapratos{
+    flex: 40%;
+}
+
+#pedidos{
+    flex: 20%;
+    background-color: white;
+}
+
+.imgprato{
+    flex:50%
+}
+
+#pedidos{
+    text-align: center;
+}

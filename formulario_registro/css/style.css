@@ -56,7 +56,7 @@ body {
     align-items: center;
 }
 
-.login-button button {
+.login-button #btnentrar {
     border: none;
     background-color: #00ff88;
     padding: 0.4rem 1rem;
@@ -64,11 +64,11 @@ body {
     cursor: pointer;
 }
 
-.login-button button:hover {
+.login-button #btnentrar:hover {
     background-color: #6b63fff1;
 }
 
-.login-button button a {
+.login-button #btnentrar a {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
@@ -148,7 +148,7 @@ body {
     color: #000000c0;
 }
 
-.continue-button button {
+.continue-button #btncontinue {
     width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -158,11 +158,11 @@ body {
     cursor: pointer;
 }
 
-.continue-button button:hover {
+.continue-button #btncontinue:hover {
     background-color: #6b63fff1;
 }
 
-.continue-button button a {
+.continue-button #btncontinue a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
