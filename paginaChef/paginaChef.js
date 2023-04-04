@@ -1,6 +1,8 @@
 var pratos = document.querySelectorAll(".imgprato");
 var pedidos = document.getElementById("listapedidos");
 var btnPedido = document.getElementById("btnpedidos");
+var btn = document.createElement("input");
+
 
 var listaPedidos = []
 
@@ -9,7 +11,6 @@ pratos.forEach((prato) => {
 
         if(listaPedidos.length == 0) {
             console.log('certo')
-            var btn = document.createElement("input");
             btn.setAttribute('type', 'button');
             btn.setAttribute('value', 'Confirmar Pedido');
             btn.setAttribute('id', 'btnpedido');
@@ -22,7 +23,12 @@ pratos.forEach((prato) => {
         var p = document.createElement("h1");
         p.innerText = `${value}`;
         pedidos.appendChild(p);
-        listaPedidos.push(value)
+        listaPedidos.push(value);
     })
 
 })
+
+btn.addEventListener("click", () => {
+    window.location.assign("../paginaPedidos/paginapedidos.html");
+})
+

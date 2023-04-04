@@ -16,5 +16,5 @@ btnContinue.addEventListener("click", () => {
 
     console.log(firstName, lastName, email, number, password, confirmPassword);
 
-    window.location.assign("../home/home.html");
+    window.location.assign("../dadosEvento/dadosEvento.html");
 })
