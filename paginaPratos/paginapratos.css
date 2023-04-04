@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(72, 164, 207);
+}
+#iten{
+    display: flex;
+    height: 210px;
+}
+
+.chef{
+    text-align: center;
+    flex:20%;
+}
+
+#pratos{
+    flex:80%;
+    overflow-y: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.prato{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 200px;
+    right: auto;
+}
+.chef_img{
+    margin-top: 5px;
+    height: 200px;
+    right: auto;
+}
