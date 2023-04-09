@@ -41,14 +41,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #2f2841;
     padding: 3rem;
 }
 
+.form-header > h1{
+    color: #00ff88;
+}
 .form-header {
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
+    background-color: #2f2841;
 }
 
 .login-button {
