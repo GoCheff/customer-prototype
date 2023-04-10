@@ -14,7 +14,9 @@ body {
     align-items: center;
     background: #201b2c;
 }
-
+.title{
+    color: #00ff88;
+}
 .container {
     width: 80%;
     height: 80vh;
@@ -88,6 +90,9 @@ body {
     position: absolute;
     border-radius: 10px;
 }
+
+
+
 
 .input-group {
     display: flex;
