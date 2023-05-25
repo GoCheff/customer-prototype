@@ -8,7 +8,14 @@ var pagamento = document.getElementById("pagamento");
 var dadosEvento = document.getElementById("dadosEvento");
 
 dadosEvento.addEventListener("click", () => { 
-    window.location.assign("../dadosEvento/dadosevento.html")
+    const currentUrl = window.location.href;
+
+    if (!currentUrl.includes("gocheff.github.io")) {
+        window.location.assign("/dadosEvento/dadosevento.html")
+        return;
+    }
+
+    window.location.assign("/customer-prototype/dadosEvento/dadosevento.html")
 })
 
 btn1.addEventListener("click", () => {
@@ -22,5 +29,12 @@ btn3.addEventListener("click", () => {
 })
 
 pagamento.addEventListener("click", () => { 
-    window.location.assign("../paginaPagamento/paginapagamento.html");
+    const currentUrl = window.location.href;
+
+    if (!currentUrl.includes("gocheff.github.io")) {
+        window.location.assign("/paginaPagamento/paginapagamento.html");
+        return;
+    }
+
+    window.location.assign("/customer-prototype/paginaPagamento/paginapagamento.html");
 })

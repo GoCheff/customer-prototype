@@ -16,5 +16,12 @@ btnContinue.addEventListener("click", () => {
 
     console.log(firstName, lastName, email, number, password, confirmPassword);
 
-    window.location.assign("../dadosEvento/dadosevento.html");
+    const currentUrl = window.location.href;
+
+    if (!currentUrl.includes("gocheff.github.io")) {
+        window.location.assign("/dadosEvento/dadosevento.html");
+        return;
+    } 
+
+    window.location.assign("/customer-prototype/dadosEvento/dadosevento.html");
 })

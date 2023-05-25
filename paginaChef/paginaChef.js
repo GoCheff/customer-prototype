@@ -29,6 +29,13 @@ pratos.forEach((prato) => {
 })
 
 btn.addEventListener("click", () => {
-    window.location.assign("../paginaPedidos/paginapedidos.html");
+    const currentUrl = window.location.href;
+
+    if (!currentUrl.includes("gocheff.github.io")) {
+        window.location.assign("/paginaPedidos/paginapedidos.html");
+        return;
+    }
+
+    window.location.assign("/customer-prototype/paginaPedidos/paginapedidos.html");
 })
 
