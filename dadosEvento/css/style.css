@@ -1,3 +1,26 @@
+:root {
+    --primary-color: #7e6641;
+    --secondary-color: #D68606;
+    --tertiary-color: #FFCB83;
+    --quaternary-color: #FFFAFA;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--tertiary-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+
 /* Todos os elementos da página */
 * {
     margin: 0;
@@ -7,16 +30,14 @@
 /* Elementos com o ID "titulo" */
 #titulo {
     font-family: sans-serif;
-    color: #380B61;
     margin-left: 7%;
-} 
+}
 
 /* Elementos com o ID "subtitulo" */
 #subtitulo {
     font-family: sans-serif;
-    color: #380B61;
     margin-left: 10%;
-} 
+}
 
 #check{
     display: inline-block;
@@ -29,10 +50,8 @@ fieldset {
 
 /* Elemento de tag <body> */
 body{
-    background-color: #201b2c;
     font-family: sans-serif;
     font-size: 1em;
-    color: #59429d;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
@@ -42,7 +61,6 @@ body{
 input, select, textarea, button {
     font-family: sans-serif;
     font-size: 1em;
-    color: #59429d;
     border-radius: 5px;
 }
 
@@ -64,7 +82,8 @@ input, select, textarea, button {
 /* Elementos de classe "campo" de tag <label> */
 .campo label {
     margin-bottom: 0.2em;
-    color: #59429d;
+    color: black;
+    font-weight: bold;
     display: block;
 }
 
@@ -77,7 +96,7 @@ fieldset.grupo .campo {
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
-    border: 1px solid #59429d;
+    border: 1px solid var(--primary-color);
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
@@ -95,7 +114,7 @@ fieldset.grupo .campo {
 /* Elemento de classe "botao" */
 .btn-buscar {
     font-size: 1.2em;
-    background: #59429d;
+    background: var(--primary-color);
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
@@ -106,12 +125,13 @@ fieldset.grupo .campo {
     top: 90%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-list-pedidos {
     font-size: 1.2em;
-    background: #59429d;
+    background: var(--primary-color);
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
@@ -122,17 +142,18 @@ fieldset.grupo .campo {
     top: 80%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
 }
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .btn-buscar:hover {
-    background: #CCBBFF;
+    background: var(--secondary-color);
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
 
 .btn-list-pedidos:hover {
-    background: #CCBBFF;
+    background: var(--secondary-color);
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
