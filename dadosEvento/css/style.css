@@ -27,6 +27,26 @@ h1 {
     padding: 0;
 }
 
+input, select {
+    height: 35px;
+    padding: 0 10px;
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    font-size: 0.8rem;
+}
+
+textarea {
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    font-size: 0.8rem;
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 1px solid var(--secondary-color);
+}
+
 /* Elementos com o ID "titulo" */
 #titulo {
     font-family: sans-serif;
@@ -39,7 +59,7 @@ h1 {
     margin-left: 10%;
 }
 
-#check{
+#check {
     display: inline-block;
 }
 
@@ -49,7 +69,7 @@ fieldset {
 }
 
 /* Elemento de tag <body> */
-body{
+body {
     font-family: sans-serif;
     font-size: 1em;
     margin-left: 36%;
@@ -89,7 +109,7 @@ input, select, textarea, button {
 
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo {
-    float:  left;
+    float: left;
     margin-right: 1em;
 }
 
@@ -97,7 +117,7 @@ fieldset.grupo .campo {
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid var(--primary-color);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     display: block;
 }
 
@@ -119,8 +139,8 @@ fieldset.grupo .campo {
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 90%;
     left: 50%;
@@ -136,8 +156,8 @@ fieldset.grupo .campo {
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 80%;
     left: 50%;
@@ -145,24 +165,25 @@ fieldset.grupo .campo {
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
 }
+
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .btn-buscar:hover {
     background: var(--secondary-color);
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
 .btn-list-pedidos:hover {
     background: var(--secondary-color);
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
 /* Elementos de classe botão e de tag <select> */
-.btn-buscar, select{
+.btn-buscar, select {
     cursor: pointer;
 }
 
-.btn-list-pedidos, select{
+.btn-list-pedidos, select {
     cursor: pointer;
 }
