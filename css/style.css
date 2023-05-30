@@ -1,37 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
 
+:root {
+    --primary-color: #7e6641;
+    --secondary-color: #D68606;
+    --tertiary-color: #FFCB83;
+    --quaternary-color: #FFFAFA;
+}
+
 body {
     margin: 0;
-    font-family:'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+    background: var(--tertiary-color);
 }
-body *{
+
+* {
     box-sizing: border-box;
 }
-.main-login{
-    width: 100vw;
+
+h1 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.main-login {
     height: 100vh;
-    background-color: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-login{
+.left-login {
     width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column ;
+    flex-direction: column;
 }
 
 .left-login > h1 {
     font-size: 3vw;
-    color: #77ffc0;
-
 }
 
-.rigth-login{
+.rigth-login {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -40,25 +51,23 @@ body *{
 
 }
 
-.card-login{
+.card-login {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: var(--quaternary-color);
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-login > h1{
-    color: #00ff88;
+.card-login > h1 {
     font-weight: 800;
-    margin: 0;
 }
 
-.textfild{
+.textfild {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,106 +76,98 @@ body *{
     width: 100%;
 }
 
-.textfild > input{
+.textfild > input {
     width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
-    color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
-
 }
 
-.textfild > label{
-    color:#f0ffffde ;
+.textfild > label {
     margin-bottom: 10px;
-}
-.textfild > input::placeholder{
-    color: #f0ffff94;
+    font-weight: bold;
 }
 
-.btn-registro{
-    width: 100%;
-    padding: 16px 0px;
+.btn-registro {
     margin: 0;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #2b134b;
-    background-color: #00ff88;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
-
 }
 
-.btn-login{
+.btn-login {
+    margin-top: 50px;
+}
+
+.btn-login, .btn-registro {
     width: 100%;
-    padding: 16px 0px;
-    margin: 25%;
+    padding: 16px 0;
     border: none;
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background-color: #00ff88;
+    color: var(--quaternary-color);
+    background: var(--secondary-color);
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
-      
+    box-shadow: 0px 10px 40px -12px var(--primary-color);
+    transition: all 0.3s ease-in-out;
 }
 
-.left-login-image{
+.btn-login:hover, .btn-registro:hover {
+    background-color: var(--primary-color);
+}
+
+.left-login-image {
     width: 35vw;
 }
 
-.card-login > p{
-    color: #00ff88;
+.card-login > p {
+    color: var(--secondary-color);
     font-weight: 300;
 }
 
 
-.card-login > a{
-    color: #00ff88;
+.card-login > a {
+    color: var(--secondary-color);
     font-weight: 300;
 }
-@media only screen and (max-width: 950px){
-    .card-login{
+
+@media only screen and (max-width: 950px) {
+    .card-login {
         width: 85%;
     }
 }
 
-@media only screen and (max-width: 653px){
-    .main-login{
+@media only screen and (max-width: 653px) {
+    .main-login {
         flex-direction: column;
 
     }
-    .left-login > h1{
+
+    .left-login > h1 {
         display: none;
     }
 
-    .left-login{
+    .left-login {
         width: 100%;
         height: auto;
 
     }
 
-    .right-login{
+    .right-login {
         width: 100%;
         height: auto;
 
     }
-    .left-login-image{
+
+    .left-login-image {
         width: 50vw;
     }
-    .card-login{
+
+    .card-login {
         width: 90%;
     }
 }

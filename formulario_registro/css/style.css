@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #7e6641;
+    --secondary-color: #D68606;
+    --tertiary-color: #FFCB83;
+    --quaternary-color: #FFFAFA;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--tertiary-color);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,17 +24,11 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #201b2c;
+h1 {
+    margin: 0;
+    color: var(--secondary-color);
 }
-.title{
-    color: #00ff88;
-}
+
 .container {
     width: 80%;
     height: 80vh;
@@ -29,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fde3a7d7;
+    background: var(--primary-color);
     padding: 1rem;
 }
 
@@ -43,18 +55,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2f2841;
+    background-color: var(--quaternary-color);
     padding: 3rem;
 }
 
-.form-header > h1{
-    color: #00ff88;
-}
 .form-header {
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
-    background-color: #2f2841;
 }
 
 .login-button {
@@ -64,14 +72,17 @@ body {
 
 .login-button #btnentrar {
     border: none;
-    background-color: #00ff88;
+    background-color: var(--secondary-color);
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    color: var(--quaternary-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .login-button #btnentrar:hover {
-    background-color: #6b63fff1;
+    background-color: var(--primary-color);
 }
 
 .login-button #btnentrar a {
@@ -85,13 +96,11 @@ body {
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #00ff88;
+    background-color: var(--secondary-color);
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
 }
-
-
 
 
 .input-group {
@@ -112,7 +121,7 @@ body {
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 0px 10px 40px #00000056;
     font-size: 0.8rem;
 }
 
@@ -121,7 +130,7 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #00ff88;
+    outline: 1px solid var(--secondary-color);
 }
 
 .input-box label,
@@ -161,14 +170,17 @@ body {
     width: 100%;
     margin-top: 2.5rem;
     border: none;
-    background-color: #00ff88;
+    background: var(--secondary-color);
+    color: var(--quaternary-color);
+    font-weight: bold;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .continue-button #btncontinue:hover {
-    background-color: #6b63fff1;
+    background: var(--primary-color);
 }
 
 .continue-button #btncontinue a {
@@ -182,9 +194,11 @@ body {
     .form-image {
         display: none;
     }
+
     .container {
         width: 50%;
     }
+
     .form {
         width: 100%;
     }
@@ -195,6 +209,7 @@ body {
         width: 90%;
         height: auto;
     }
+
     .input-group {
         flex-direction: column;
         z-index: 5;
@@ -203,15 +218,19 @@ body {
         overflow-y: scroll;
         flex-wrap: nowrap;
     }
+
     .gender-inputs {
         margin-top: 2rem;
     }
+
     .gender-group {
         flex-direction: column;
     }
+
     .gender-title h6 {
         margin: 0;
     }
+
     .gender-input {
         margin-top: 0.5rem;
     }
