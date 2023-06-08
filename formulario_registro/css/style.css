@@ -114,7 +114,7 @@ h1 {
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    margin-left: 2px;
 }
 
 .input-box input {
