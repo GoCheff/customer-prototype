@@ -57,6 +57,7 @@ h1 {
     align-items: center;
     background-color: var(--quaternary-color);
     padding: 3rem;
+    border-radius: 8px;
 }
 
 .form-header {
