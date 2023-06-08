@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
 :root {
     --primary-color: #7e6641;
     --secondary-color: #D68606;
@@ -8,11 +10,18 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--tertiary-color);
 }
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -20,170 +29,229 @@ h1 {
     color: var(--secondary-color);
 }
 
-
-/* Todos os elementos da página */
-* {
-    margin: 0;
-    padding: 0;
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-input, select {
-    height: 35px;
-    padding: 0 10px;
-    border: none !important;
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quaternary-color);
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button #btnbuscar {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--quaternary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.login-button #btnbuscar:hover {
+    background-color: var(--primary-color);
+}
+
+.login-button #btnbuscar a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    position: absolute;
     border-radius: 10px;
-    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px var(--secondary-color);
     font-size: 0.8rem;
 }
 
-textarea {
-    border: none !important;
-    border-radius: 10px;
-    box-shadow: 0px 10px 40px #00000056;
-    font-size: 0.8rem;
+.input-box input:hover {
+    background-color: #eeeeee75;
 }
 
-input:focus-visible, select:focus-visible, textarea:focus-visible {
+.input-box input:focus-visible {
     outline: 1px solid var(--secondary-color);
 }
 
-/* Elementos com o ID "titulo" */
-#titulo {
-    font-family: sans-serif;
-    margin-left: 7%;
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
 }
 
-/* Elementos com o ID "subtitulo" */
-#subtitulo {
-    font-family: sans-serif;
-    margin-left: 10%;
+.input-box input::placeholder {
+    color: #000000be;
 }
 
-#check {
-    display: inline-block;
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
 }
 
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
+.gender-input {
+    display: flex;
+    align-items: center;
 }
 
-/* Elemento de tag <body> */
-body {
-    font-family: sans-serif;
-    font-size: 1em;
-    margin-left: 36%;
-    margin-top: 2%;
-    justify-content: center;
+.gender-input input {
+    margin-right: 0.35rem;
 }
 
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea, button {
-    font-family: sans-serif;
-    font-size: 1em;
-    border-radius: 5px;
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
 }
 
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
-    display: table;
-}
-
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-    clear: both;
-}
-
-/* Elementos de classe "campo" */
-.campo {
-    margin-bottom: 1em;
-}
-
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-    margin-bottom: 0.2em;
-    color: black;
+.continue-button #btnpedidos {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--quaternary-color);
     font-weight: bold;
-    display: block;
-}
-
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float: left;
-    margin-right: 1em;
-}
-
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
-    border: 1px solid var(--primary-color);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    display: block;
-}
-
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-    padding-right: 1em;
-}
-
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
-}
-
-/* Elemento de classe "botao" */
-.btn-buscar {
-    font-size: 1.2em;
-    background: var(--primary-color);
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-.btn-list-pedidos {
-    font-size: 1.2em;
+.continue-button #btnpedidos:hover {
     background: var(--primary-color);
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out;
 }
 
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.btn-buscar:hover {
-    background: var(--secondary-color);
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
+.continue-button #btnpedidos a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
 
-.btn-list-pedidos:hover {
-    background: var(--secondary-color);
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
 
-/* Elementos de classe botão e de tag <select> */
-.btn-buscar, select {
-    cursor: pointer;
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-title h6 {
+        margin: 0;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
 }
 
-.btn-list-pedidos, select {
-    cursor: pointer;
-}
+    /* Estilizando a barra lateral de rolagem */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+      }
+  
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
