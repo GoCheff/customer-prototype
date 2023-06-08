@@ -1,8 +1,8 @@
 var btnBuscar = document.getElementById("btnbuscar");
-var pedidos = document.getElementById("pedidos");
+var btnPedidos = document.getElementById("btnpedidos");
 
 
-pedidos.addEventListener("click", () => {
+btnPedidos.addEventListener("click", () => {
     const currentUrl = window.location.href;
 
     if (!currentUrl.includes("gocheff.github.io")) {
