@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -6,57 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Pesquisa</title>
-    
 </head>
+
 <body>
-
-    <div class="titulo">
-        <h1>Informe os dados do evento</h1>
-    </div>
-
-   <form action="">
-    <fieldset class="grupo">
-        <div class="campo">
-            <label for="">Informe a localização do envento:</label><br>
-            <input type="text" placeholder="Local(Futuremente GPS)"><br>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/Logo_principal.png" alt="">
         </div>
-        <div class="campo">
-            <label for="">Informe a data do evento:</label><br>
-            <input type="date" placeholder="xx/xx/xxxx"><br>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Informe os dados do evento</h1>
+                    </div>
+
+                    <div class="login-button">
+                        <input type="button" id="btnbuscar" value="Buscar">
+                        </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                    <label for="localevento">Local</label>
+                        <input id="localevento" type="text" name="localevento" placeholder="Digite o endereço do evento" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="dataevento">Data e horário</label>
+                        <input id="dataevento" type="datetime-local" name="dataevento" placeholder="" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="quantconvidados">Quantidade de convidados</label>
+                        <input id="quantconvidados" type="number" name="quantconvidados" placeholder="Digite o número de convidados" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmpassword">Observações</label>
+                        <textarea name="" id="" cols="70" rows="6"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Categorias dos pratos</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female"type="checkbox" name="gender">
+                            <label for="female">Japoneza</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="checkbox" name="gender">
+                            <label for="male">Chineza</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others"type="checkbox" name="gender">
+                            <label for="others">Arabe</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="checkbox" name="gender">
+                            <label for="none">Mexicana</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-button">
+                <input type="button" id="btnpedidos" value="Listar Pedidos">
+                </div>
+            </form>
         </div>
-       
-    </fieldset>
-
-   <div class="campo">
-    <label for="">Informe a quantidade de convidados:</label><br>
-    <input type="text" placeholder="Qtde. Pessoas"><br>
-   </div>
-
-  <div class="campo">
-    
-   <label for="">Informe a categoria do pratos:</label><br>
-    <select name="comidas" id="comidas">
-        <option value=""> Escolha uma opção</option>
-        <option value="japoneza"> Japoneza</option>
-        <option value="chineza"> Chineza</option>
-        <option value="arabe"> Arabe</option>
-        <option value="mexicana"> Mexicana</option>
-   </select><br>
-  </div>
-
-  <div class="campo">
-    <br>
-    <label for="experiencia"><strong>Observações: </strong></label>
-    <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
     </div>
-
-   <input class="btn-buscar" id="btnbuscar" type="button" value="Buscar"><br>
-   <br>
-   
-   <br>
-   
-   <input class="btn-list-pedidos" id="pedidos" type="button" value="Lista de pedidos">
-   <script src="dadosevento.js"></script>
-</form>
+    <script src="dadosevento.js"></script>
 </body>
+
 </html>
