@@ -1,60 +1,121 @@
-body{
-    background-color: rgb(72, 164, 207);
+:root {
+    --primary-color: #7e6641;
+    --secondary-color: #D68606;
+    --tertiary-color: #FFCB83;
+    --quaternary-color: #FFFAFA;
 }
 
-#divChef{
+h1{
+    color: var(--secondary-color);
+}
+
+
+h3{
+    color: var(--secondary-color);
+}
+
+b{
+    color: var(--secondary-color);
+
+}
+
+body {
+    background: var(--tertiary-color);
+}
+
+#divChef {
+    margin-top: 2px;
+    margin-left: 2px;
     display: flex;
-    height: 400px;
-    background-color: rgb(224, 97, 97);
+    width: auto;
+    height: auto;
 }
 
-.imgdescricao{
+.imgdescricao {
     display: flex;
 }
 
-.descricao{
+.descricao {
     padding-left: 10px;
     flex: 50%;
 
 }
 
-#fotoChef{
- flex: 40%;
- text-align: center;
+#fotoChef {
+    flex: 20%;
 }
 
-#fotoChef img{
+#fotoChef img {
     padding-top: 10px;
     padding-left: 10px;
     height: 350px;
+    border-radius: 5%;
 }
 
-#descricaoChef{
-flex: 60%;
+#descricaoChef {
+    padding-left: 15px;
+    flex: 80%;
 }
-.prato{
+
+.prato {
     margin-left: 5px;
     margin-top: 5px;
     height: 200px;
     right: auto;
+    border-radius: 5%;
+
 }
-#pratospedidos{
+
+#pratospedidos {
     display: flex;
 }
 
-.listapratos{
+.listapratos {
     flex: 40%;
 }
 
-#pedidos{
+#pedidos {
     flex: 20%;
-    background-color: white;
 }
 
-.imgprato{
-    flex:50%
+.imgprato {
+    flex: 50%
 }
 
-#pedidos{
+#pedidos {
     text-align: center;
+}
+
+#btnpedido {
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--quaternary-color);
+    font-weight: bold;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btnpedido:hover {
+    background: var(--primary-color);
+}
+@media only screen and (max-width: 653px) {
+    #divChef {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imgdescricao {
+        flex-direction: column;
+    }
+
+    #pratospedidos {
+        flex-direction: column;
+
+    }
 }

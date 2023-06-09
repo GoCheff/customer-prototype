@@ -20,7 +20,8 @@ pratos.forEach((prato) => {
         
 
         var value = prato.dataset.value;
-        var p = document.createElement("h1");
+        var p = document.createElement("h3");
+        p.className = "pSelecionado";
         p.innerText = `${value}`;
         pedidos.appendChild(p);
         listaPedidos.push(value);
