@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Dados do pagamento via paypal</h1>
-    <label for="">Digite seu e-mail:</label>
-    <input type="text" placeholder="Email"></br>
-    <label for="">Digite sua senha:</label>
-    <input type="text" placeholder="Senha"></br>
+    <div class="input-group" >
+        <h1>Dados do pagamento via paypal</h1>
 
-    <input id="btnpagamento" type="button" value="Confirmar pagamento">
+        <div class="input-box">
+            <label for="">Digite seu e-mail:</label>
+            <input type="text" placeholder="Email"></br>
+        </div>
+       <div class="input-box">
+        <label for="">Digite sua senha:</label>
+        <input type="text" placeholder="Senha"></br>
+       </div>
+    
+       <div class="input-box">
+        <input class="Pay-button" id="btnpagamento" type="button" value="Confirmar pagamento">
+       </div>
+    </div>
     <script src="paginapagamento.js"></script>
 </body>
 </html>
