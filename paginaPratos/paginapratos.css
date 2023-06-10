@@ -1,5 +1,17 @@
+
+:root {
+    --primary-color: #7e6641;
+    --secondary-color: #D68606;
+    --tertiary-color: #FFCB83;
+    --quaternary-color: #FFFAFA;
+}
+
 body{
-    background-color: rgb(72, 164, 207);
+    background: var(--tertiary-color)
+}
+h1{
+    color: var(--secondary-color);
+    text-align: center;
 }
 #iten{
     display: flex;
@@ -16,16 +28,32 @@ body{
     overflow-y: scroll;
     white-space: nowrap;
     overflow-y: hidden;
+    cursor: grab;
+    display: flex    
 }
+#pratos.dragging {
+    cursor: grabbing;
+  }
+  
+  #pratos::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+  }
+  
+  #pratos::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
 
 .prato{
     margin-left: 5px;
     margin-top: 5px;
     height: 200px;
     right: auto;
+    border-radius: 5%;
 }
 .chef_img{
     margin-top: 5px;
     height: 200px;
     right: auto;
+    border-radius: 5%;
 }
