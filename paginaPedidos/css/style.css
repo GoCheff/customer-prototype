@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #7e6641;
+    --secondary-color: #D68606;
+    --tertiary-color: #FFCB83;
+    --quaternary-color: #FFFAFA;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--tertiary-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+p {
+    font-weight: bold;
+    
+}
+h1 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.Return-button{
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--quaternary-color);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.Return-button:hover {
+    background-color: var(--primary-color);
+}
+.Return-button #btnentrar a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.Continue-button #btncontinue {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--quaternary-color);
+    font-weight: bold;
+    padding: 0.22rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Continue-button #btncontinue:hover {
+    background: var(--primary-color);
+}
+
+.Continue-button #btncontinue a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-group {
+    flex-direction: column;
+    z-index: 5;
+    padding-right: 5rem;
+    max-height: 100rem;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    margin: 20px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    border: black;
+    border-width: 8px;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px var(--secondary-color);
+    font-size: 0.8rem;
+    
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid var(--secondary-color);
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+
+
+/* Estilizando a barra lateral de rolagem */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+      }
+  
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }

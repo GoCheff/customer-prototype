@@ -5,24 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <input id="dadosEvento" type="button" value="Voltar a tela de dados do evento">
+    <input class="Return-button" id="dadosEvento" type="button" value="Voltar a tela de dados do evento">
 
-    <div id="15515">
-        <p>pedido: 15515 Stauts: Finalizado </p>
+    <div class="input-group">
+
+        <div class="input-box" id="15515">
+            <p>PEDIDO: 15515 STATUS: FINALIZADO</p>
+        </div>
+        
+        <div class="input-box" id="15516">
+            <p>PEDIDO: 15516 STATUS: AG. PGTO. <input class="Continue-button" id="pagamento" type="button" value="Efetuar pagamento"> <input class="Continue-button" id="btn15516" type="button" value="Cancelar pedido"> </p>
+        </div>
+
+        <div class="input-box" id="15516">
+            <p>PEDIDO: 15517 STATUS: AG. PGTO. <input class="Continue-button" id="pagamento" type="button" value="Efetuar pagamento"> <input class="Continue-button" id="btn15516" type="button" value="Cancelar pedido"> </p>
+        </div>
+
+        <div class="input-box" id="15518">
+            <p>PEDIDO: 15518 STATUS: PRONTO. <input class="Continue-button" id="btn15518" type="button" value="Cancelar pedido"> </p>
+        </div>
+
+        
     </div>
-    <div id="15516">
-        <p>pedido: 15516 Stauts: Ag. Chef. <input id="pagamento" type="button" value="Efetuar pagamento"> <input id="btn15516" type="button" value="Cancelar pedido"> </p>
-    </div>
-    <div id="15517">
-        <p>pedido: 15517 Status: Ag. Pgto. <input id="btn15517" type="button" value="Cancelar pedido"> </p>
-    </div>
-    <div id="15518">
-        <p>pedido: 15518 Status: Pronto. <input id="btn15518" type="button" value="Cancelar pedido"> </p>
-    </div>
+   
     <script src="paginapedidos.js"></script>
 </body>
 
