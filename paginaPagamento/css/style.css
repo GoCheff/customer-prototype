@@ -30,6 +30,9 @@ p {
 h1 {
     margin: 0;
     color: var(--secondary-color);
+    align-items: center;
+    margin: 0.6rem 0;
+    margin-left: 30px;
 }
 
 .Pay-button{
