@@ -171,4 +171,7 @@ h1 {
     .card-login {
         width: 1000px;
     }
+    .rigth-login {
+        width: 90vw;
+    }
 }
