@@ -5,6 +5,7 @@ var btn2 = document.getElementById("btn15517");
 var pedido3 = document.getElementById("15518");
 var btn3 = document.getElementById("btn15518");
 var pagamento = document.getElementById("pagamento");
+var pagamento2 = document.getElementById("pagamento2");
 var dadosEvento = document.getElementById("dadosEvento");
 
 dadosEvento.addEventListener("click", () => { 
@@ -28,13 +29,18 @@ btn3.addEventListener("click", () => {
     pedido3.remove();
 })
 
-pagamento.addEventListener("click", () => { 
-    const currentUrl = window.location.href;
+pagamento.addEventListener("click", pagamentoEvento);
+pagamento2.addEventListener("click", pagamentoEvento);
 
-    if (!currentUrl.includes("gocheff.github.io")) {
-        window.location.assign("/paginaPagamento/paginapagamento.html");
-        return;
-    }
 
-    window.location.assign("/customer-prototype/paginaPagamento/paginapagamento.html");
-})
+
+function pagamentoEvento(){
+        const currentUrl = window.location.href;
+    
+        if (!currentUrl.includes("gocheff.github.io")) {
+            window.location.assign("/paginaPagamento/paginapagamento.html");
+            return;
+        }
+    
+        window.location.assign("/customer-prototype/paginaPagamento/paginapagamento.html");
+}

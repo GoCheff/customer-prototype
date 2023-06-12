@@ -91,7 +91,6 @@ h1 {
     z-index: 5;
     padding-right: 5rem;
     max-height: 100%;
-    overflow-y: scroll;
     flex-wrap: nowrap;
     margin: 20px;
     border-radius: 8px;
