@@ -6,6 +6,9 @@
     --tertiary-color: #FFCB83;
     --quaternary-color: #FFFAFA;
 }
+#textarea{
+    resize: none;
+}
 
 body {
     margin: 0;
